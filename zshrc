@@ -15,5 +15,3 @@ setopt no_beep
 
 alias ls='eza'
 alias cd='z'
-
-
