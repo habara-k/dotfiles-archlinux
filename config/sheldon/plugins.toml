@@ -1,0 +1,35 @@
+shell = "zsh"
+
+[templates]
+defer = "{{ hooks?.pre | nl }}{% for file in files %}zsh-defer source \"{{ file }}\"\n{% endfor %}{{ hooks?.post | nl }}"
+
+[plugins]
+
+[plugins.zsh-defer]
+github = "romkatv/zsh-defer"
+
+[plugins.zsh-autosuggestions]
+github = "zsh-users/zsh-autosuggestions"
+apply = ["defer"]
+hooks.post = '''
+bindkey "^F" autosuggest-accept
+'''
+
+[plugins.zsh-syntax-highlighting]
+github = "zsh-users/zsh-syntax-highlighting"
+apply = ["defer"]
+
+[plugins.zsh-history-substring-search]
+github = "zsh-users/zsh-history-substring-search"
+apply = ["defer"]
+hooks.post = '''
+bindkey '^P' history-substring-search-up
+bindkey '^N' history-substring-search-down
+'''
+
+[plugins.fzf-tab-completion]
+local = "/usr/share/fzf-tab-completion/zsh"
+apply = ["defer"]
+hooks.post = '''
+bindkey '^I' fzf_completion
+'''
