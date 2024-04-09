@@ -15,7 +15,7 @@ inline = 'autoload -Uz compinit && zsh-defer compinit'
 github = "zsh-users/zsh-autosuggestions"
 apply = ["defer"]
 hooks.post = '''
-bindkey "^F" autosuggest-accept
+bindkey '^F' autosuggest-accept
 '''
 
 [plugins.zsh-syntax-highlighting]
