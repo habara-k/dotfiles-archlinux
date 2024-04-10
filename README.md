@@ -11,5 +11,5 @@ cd dotfiles-archlinux
 
 ```
 sudo pacman -S fzf zoxide atuin sheldon wezterm starship eza bat
-paru -S fzf-tab-completion-git neovim-nightly-bin
+paru -S neovim-nightly-bin
 ```

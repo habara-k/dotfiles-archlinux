@@ -30,9 +30,6 @@ bindkey '^P' history-substring-search-up
 bindkey '^N' history-substring-search-down
 '''
 
-[plugins.fzf-tab-completion]
-local = "/usr/share/fzf-tab-completion/zsh"
+[plugins.fzf-tab]
+github = "Aloxaf/fzf-tab"
 apply = ["defer"]
-hooks.post = '''
-bindkey '^I' fzf_completion
-'''
