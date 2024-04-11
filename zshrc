@@ -17,3 +17,5 @@ alias ls='eza'
 alias cd='z'
 alias cat='bat'
 alias g='$(ghq root)/$(ghq list | fzf)'
+
+zstyle ':completion:*' rehash true
