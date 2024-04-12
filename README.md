@@ -10,6 +10,7 @@ cd dotfiles-archlinux
 # Requirements
 
 ```
-sudo pacman -S fzf zoxide atuin sheldon wezterm starship eza bat
-paru -S neovim-nightly-bin
+sudo pacman -S zsh fzf zoxide atuin sheldon wezterm starship eza bat
+paru -S neovim-nightly-bin ghq
+chsh -s $(which zsh)
 ```
