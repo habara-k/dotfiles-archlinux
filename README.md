@@ -3,7 +3,7 @@
 ```
 git clone https://github.com/habara-k/dotfiles-archlinux.git
 cd dotfiles-archlinux
-# Remove $HOME/.config/(nvim,sheldon,wezterm,hypr) if exists
+# Remove $HOME/.config/(nvim,sheldon,wezterm,sway) if exists
 ./install.sh
 ```
 
