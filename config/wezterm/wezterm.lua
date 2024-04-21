@@ -3,6 +3,8 @@ local wezterm = require("wezterm")
 local act = wezterm.action
 
 return {
+	initial_cols = 200,
+	initial_rows = 200,
 	window_background_opacity = 0.7,
 	leader = { key = "q", mods = "CTRL", timeout_milliseconds = math.maxinteger },
 	keys = {
