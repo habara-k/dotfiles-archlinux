@@ -3,6 +3,7 @@ local wezterm = require("wezterm")
 local act = wezterm.action
 
 return {
+	window_background_opacity = 0.7,
 	leader = { key = "k", mods = "CTRL" },
 	keys = {
 		{ key = "f", mods = "LEADER", action = act.SpawnTab("CurrentPaneDomain") },
