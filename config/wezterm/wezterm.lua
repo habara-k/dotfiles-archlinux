@@ -4,7 +4,7 @@ local act = wezterm.action
 
 return {
 	window_background_opacity = 0.7,
-	leader = { key = "k", mods = "CTRL" },
+	leader = { key = "q", mods = "CTRL", timeout_milliseconds = math.maxinteger },
 	keys = {
 		{ key = "f", mods = "LEADER", action = act.SpawnTab("CurrentPaneDomain") },
 		{ key = "c", mods = "LEADER", action = act.SpawnTab("CurrentPaneDomain") },
